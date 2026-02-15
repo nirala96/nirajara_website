@@ -459,14 +459,15 @@ body {
 
 .service-card {
     background: white;
-    padding: 0;
+    padding: 35px 25px;
     border-radius: 20px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 2px solid transparent;
     animation: fadeIn 0.5s ease-out;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
+    text-align: center;
 }
 
 .service-card::before {
@@ -491,33 +492,15 @@ body {
     border-color: var(--gold-color);
 }
 
-.service-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 18px 18px 0 0;
-}
-
-.service-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s;
-}
-
-.service-card:hover .service-image img {
-    transform: scale(1.1);
-}
-
 .service-icon {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background: linear-gradient(135deg, var(--primary-color), var(--gold-color));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -35px auto 20px;
+    margin: 0 auto 25px;
     position: relative;
     box-shadow: 0 5px 20px rgba(184, 134, 11, 0.3);
 }
@@ -529,17 +512,15 @@ body {
 
 .service-card h3 {
     font-size: 1.35rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: var(--dark-color);
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
-    padding: 0 25px;
 }
 
 .service-card p {
     color: var(--text-light);
     margin-bottom: 20px;
-    padding: 0 25px;
     line-height: 1.7;
 }
 
@@ -551,7 +532,6 @@ body {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
-    margin: 0 25px 25px;
     border: 1px solid rgba(184, 134, 11, 0.2);
 }
 
@@ -756,6 +736,7 @@ body {
     z-index: 999;
     transition: all 0.3s;
     animation: pulse 2s infinite;
+    text-decoration: none;
 }
 
 .whatsapp-float:hover {
