@@ -184,4 +184,4 @@ document.querySelectorAll('img').forEach(img => {
 });
 */
 
-console.log('Nirjara Niyampuja Website Loaded Successfully! 🕉️');
+console.log('Niyam Puja - Sacred Vedic Portal Loaded Successfully! 🕉️✨');
